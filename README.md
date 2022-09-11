@@ -84,7 +84,7 @@ model_loss, model_accuracy = nn.evaluate(X_test_scaled, y_test, verbose=2)
 
 Prior to making any additional changes to the dataset in the feature engineering step, the dataset was further explored with evaluating the number of successful organizations based on the data from the categorical columns, simply by grouping by the feature and calculating the percent of organizations with that feature that were successful or not. This step was repeatedly done throughout the dataframe with one line of code: 
 
-python```
+```python
 df.groupby("categorical_column_name").mean()
 ```
 
